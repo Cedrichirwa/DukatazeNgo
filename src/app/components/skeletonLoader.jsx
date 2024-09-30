@@ -1,4 +1,4 @@
-// SkeletonLoader.jsx
+
 import React from "react";
 
 const SkeletonLoader = () => {

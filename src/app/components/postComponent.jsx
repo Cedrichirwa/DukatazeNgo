@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { trpc } from "@/trpc/client";
-import SkeletonLoader from "@/app/components/SkeletonLoader"; // Adjust the path as needed
+import SkeletonLoader from "./skeletonLoader"; // Adjust the path as needed
 
 const FALLBACK_LIMIT = 3;
 
