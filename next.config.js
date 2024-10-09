@@ -8,7 +8,7 @@ const nextConfig = {
 			},
 			{
 				protocol: "https",
-				hostname:"https://www.dukataze.rw",
+				hostname: "dukataze.rw",
 			},
 		],
 	},
