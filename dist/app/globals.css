@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+html{ 
+  scroll-behavior: smooth;
+  font-family: 'Raleway',sans-serif;
+}
+.custom-img{
+  /* background-image: url('https://rwanda.dotrust.org/media/sites/7/2023/03/PHOTO-2023-03-13-16-41-14-logo.png'); */
+  background-image: url('../assets/teamm.jpeg');
+}
+.ceo{
+  background-image: url('../assets/aminaa.jpeg');
+}
+.shaxy{
+  background-image: url('../assets/shaxy.png');
+}
+.bglogin{
+  background-image: url('../assets/bgfronta.png');
+}
+.program{
+  background-image: url('../assets/program.jpeg');
+}
+.getinv{
+  background-image: url('../assets/involve.jpg');
+}
+.cont{
+  background-image: url('../assets/contact.jpeg');
+}
+.talk{
+  background-image: url('../assets/talk.jpg');
+}
+.station{
+  background-image: url('../assets/station.jpeg');
+}
+.iriza{
+  background-image: url('../assets/iriza.jpeg');
+}
+.sew{
+  background-image: url('../assets/sewing.jpeg');
+}
+.coll{
+  background-image: url('../assets/collaborate.jpeg');
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-heading {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0; /* Initially hidden */
+  animation: typing 3.5s steps(40, end) forwards; /* Reveal letters one by one */
+  text-align: center; /* Ensure the text stays centered */
+  display: inline-block; /* Keep text inline to apply width animation */
+}
