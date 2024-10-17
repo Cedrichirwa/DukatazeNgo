@@ -47,7 +47,7 @@ const Event = (props) => {
                     Events
                 </h2>
                 <p className="text-center text-gray-400 p-1">
-                    it'll be our pleasure to be with you
+                    it&apos;ll be our pleasure to be with you
                 </p>
             </div>
             <div className="my-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:px-10">
