@@ -54,8 +54,7 @@ const About: React.FC = () => {
                         Impact <span className="text-yellow-600">Metrics</span>
                     </h1>
                     <p className="flex justify-start text-left">
-                        We are driven with the spirit of improving the lives of women and
-                        girls with multiple and intersecting vulnerabilities.
+                         Empowering young people to fight teenage pregnancies and menstruation stigma through education, economic empowerment,and creative engagement.
                     </p>
                     <div className="pt-20 grid grid-cols-2 gap-10 text-lg font-semibold">
                         <div>
