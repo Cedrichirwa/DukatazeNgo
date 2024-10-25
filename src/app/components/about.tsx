@@ -54,7 +54,7 @@ const About: React.FC = () => {
                         Impact <span className="text-yellow-600">Metrics</span>
                     </h1>
                     <p className="flex justify-start text-left">
-                         Empowering young people to fight teenage pregnancies and menstruation stigma through education, economic empowerment,and creative engagement.
+                        We aim to having a future where young people embrace their sexual and reproductive health with confidence, fostering a culture of openness and understanding, free from stigma and unplanned pregnancies.
                     </p>
                     <div className="pt-20 grid grid-cols-2 gap-10 text-lg font-semibold">
                         <div>
