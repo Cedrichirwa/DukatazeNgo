@@ -22,9 +22,9 @@ const Blog = () => {
         </div>
         {/* <div className="grid md:grid-cols-3 ">{blog}</div> */}
         <div className="flex items-center justify-center gap-4 my-4">
-          <button className="px-3 animate-wobble">{`>>>`}</button>
+          <button className="px-3 animate-wobble text-yellow-600">{`>>>`}</button>
           <Link href="/blogs" className="text-cyan-700 font-semibold">
-            Click to See more blogs
+             See more blogs
           </Link>
         </div>
       </div>

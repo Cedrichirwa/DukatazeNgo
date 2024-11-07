@@ -137,4 +137,32 @@ exports.appRouter = (0, trpc_1.router)({
             }
         });
     }); }),
+    // New procedure to get a blog by ID
+    getBlogById: trpc_1.publicProcedure
+        .input(zod_1.z.object({ id: zod_1.z.string() }))
+        .query(function (_a) { return __awaiter(void 0, [_a], void 0, function (_b) {
+        var id, payload, blog;
+        var input = _b.input;
+        return __generator(this, function (_c) {
+            switch (_c.label) {
+                case 0:
+                    id = input.id;
+                    return [4 /*yield*/, (0, get_payload_1.getPayloadClient)()];
+                case 1:
+                    payload = _c.sent();
+                    return [4 /*yield*/, payload.findOne({
+                            collection: "blogs",
+                            where: {
+                                id: { equals: id },
+                            },
+                        })];
+                case 2:
+                    blog = _c.sent();
+                    if (!blog) {
+                        throw new Error("Blog not found");
+                    }
+                    return [2 /*return*/, blog];
+            }
+        });
+    }); }),
 });

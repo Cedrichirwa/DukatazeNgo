@@ -133,5 +133,11 @@ exports.Media = {
             relationTo: "events",
             hasMany: true,
         },
+        {
+            name: "blog",
+            type: "relationship",
+            relationTo: "blogs",
+            hasMany: true,
+        },
     ],
 };

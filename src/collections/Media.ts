@@ -73,5 +73,11 @@ export const Media: CollectionConfig = {
       relationTo: "events",
       hasMany: true,
     },
+    {
+      name: "blog",
+      type: "relationship",
+      relationTo: "blogs",
+      hasMany: true,
+    },
   ],
 };

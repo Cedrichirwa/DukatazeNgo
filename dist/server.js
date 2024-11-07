@@ -68,7 +68,7 @@ var next_utils_1 = require("./next-utils");
 var trpcExpress = __importStar(require("@trpc/server/adapters/express"));
 var trpc_1 = require("./trpc");
 var app = (0, express_1.default)();
-var PORT = Number(process.env.PORT) || 3000;
+var PORT = Number(process.env.PORT) || 5000;
 var createContext = function (_a) {
     var req = _a.req, res = _a.res;
     return ({

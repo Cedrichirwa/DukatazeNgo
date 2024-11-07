@@ -61,7 +61,7 @@ const About: React.FC = () => {
                         <div>
                             <p>
                                 <span
-                                    className="text-cyan-700 text-4xl font-bold"
+                                    className="text-cyan-700 text-3xl font-bold"
                                     ref={experienceRef}
                                 ></span>{" "}
                                 Years of experience
@@ -70,7 +70,7 @@ const About: React.FC = () => {
                         <div>
                             <p>
                                 <span
-                                    className="text-yellow-600 text-4xl font-bold"
+                                    className="text-yellow-600 text-3xl font-bold"
                                     ref={projectsRef}
                                 ></span>{" "}
                                 Projects implemented
@@ -79,7 +79,7 @@ const About: React.FC = () => {
                         <div>
                             <p>
                                 <span
-                                    className="text-yellow-600 text-4xl font-bold"
+                                    className="text-yellow-600 text-3xl font-bold"
                                     ref={beneficiariesRef}
                                 ></span>{" "}
                                 Beneficiaries
@@ -88,7 +88,7 @@ const About: React.FC = () => {
                         <div>
                             <p>
                                 <span
-                                    className="text-cyan-700 text-4xl font-bold"
+                                    className="text-cyan-700 text-3xl font-bold"
                                     ref={impactedRef}
                                 ></span>{" "}
                                 People that were impacted

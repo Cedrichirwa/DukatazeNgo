@@ -89,6 +89,27 @@ export const appRouter = router({
         nextPage: hasNextPage ? nextPage : null,
       };
     }),
+
+  // New procedure to get a blog by ID
+  getBlogById: publicProcedure
+    .input(z.object({ id: z.string() }))
+    .query(async ({ input }) => {
+      const { id } = input;
+      const payload = await getPayloadClient();
+
+      const blog = await payload.findOne({
+        collection: "blogs",
+        where: {
+          id: { equals: id },
+        },
+      });
+
+      if (!blog) {
+        throw new Error("Blog not found");
+      }
+
+      return blog;
+    }),
 });
 
 export type AppRouter = typeof appRouter;
