@@ -10,7 +10,7 @@ const BlogsPage = () => {
           Our Latest Blogs
         </h1>
         <div className="grid md:grid-cols-3 lg:gap-6 gap-2">
-          <PostComponent query={{ sort: "desc", limit: 3 }} />
+          <PostComponent query={{ sort: "desc"}} />
         </div>
       </div>
     </>

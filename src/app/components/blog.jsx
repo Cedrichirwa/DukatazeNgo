@@ -18,7 +18,7 @@ const Blog = () => {
         </div>
 
         <div className="grid md:grid-cols-3 ">
-          <PostComponent query={{ sort: "desc", limit: 4 }} />
+          <PostComponent query={{ sort: "desc", limit: 3 }} />
         </div>
         {/* <div className="grid md:grid-cols-3 ">{blog}</div> */}
         <div className="flex items-center justify-center gap-4 my-4">

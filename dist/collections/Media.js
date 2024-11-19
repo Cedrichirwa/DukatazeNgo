@@ -72,33 +72,19 @@ exports.Media = {
         beforeChange: [
             function (_a) {
                 var req = _a.req, data = _a.data;
-                return __assign(__assign({}, data), { user: req.user.id });
+                return (__assign(__assign({}, data), { user: req.user.id }));
             },
         ],
     },
     access: {
-        read: function (_a) { return __awaiter(void 0, [_a], void 0, function (_b) {
-            var referer;
-            var req = _b.req;
-            return __generator(this, function (_c) {
-                switch (_c.label) {
-                    case 0:
-                        referer = req.headers.referer;
-                        if (!req.user || !(referer === null || referer === void 0 ? void 0 : referer.includes('sell'))) {
-                            return [2 /*return*/, true];
-                        }
-                        return [4 /*yield*/, isAdminOrHasAccessToImages()({ req: req })];
-                    case 1: return [2 /*return*/, _c.sent()];
-                }
-            });
-        }); },
+        read: function () { return true; }, // Public access for media files
         delete: isAdminOrHasAccessToImages(),
         update: isAdminOrHasAccessToImages(),
     },
     admin: {
         hidden: function (_a) {
             var user = _a.user;
-            return user.role !== 'admin';
+            return user.role !== "admin";
         },
     },
     upload: {
@@ -141,3 +127,66 @@ exports.Media = {
         },
     ],
 };
+// export const Media: CollectionConfig = {
+//   slug: "media",
+//   hooks: {
+//     beforeChange: [
+//       ({ req, data }) => {
+//         return { ...data, user: req.user.id }
+//       },
+//     ],
+//   },
+//   access: {
+//     read: async ({ req }) => {
+//       const referer = req.headers.referer
+//       if (!req.user || !referer?.includes('sell')) {
+//         return true
+//       }
+//       return await isAdminOrHasAccessToImages()({ req })
+//     },
+//     delete: isAdminOrHasAccessToImages(),
+//     update: isAdminOrHasAccessToImages(),
+//   },
+//   admin: {
+//     hidden: ({ user }) => user.role !== 'admin',
+//   },
+//   upload: {
+//     staticURL: "/media",
+//     staticDir: "media",
+//     imageSizes: [
+//       {
+//         name: "thumbnail",
+//         width: 400,
+//         height: 300,
+//         position: "centre",
+//       },
+//       {
+//         name: "card",
+//         width: 768,
+//         height: 1024,
+//         position: "centre",
+//       },
+//       {
+//         name: "tablet",
+//         width: 1024,
+//         height: undefined,
+//         position: "centre",
+//       },
+//     ],
+//     mimeTypes: ["image/*"],
+//   },
+//   fields: [
+//     {
+//       name: "event",
+//       type: "relationship",
+//       relationTo: "events",
+//       hasMany: true,
+//     },
+//     {
+//       name: "blog",
+//       type: "relationship",
+//       relationTo: "blogs",
+//       hasMany: true,
+//     },
+//   ],
+// };

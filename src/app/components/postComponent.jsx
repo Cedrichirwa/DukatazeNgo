@@ -5,7 +5,7 @@ import { trpc } from "@/trpc/client";
 import SkeletonLoader from "./skeletonLoader"; // Adjust the path as needed
 import MagicButton from "../components/ui/MagicButton"; // Import the MagicButton
 
-const FALLBACK_LIMIT = 3;
+const FALLBACK_LIMIT = 10;
 
 const PostComponent = (props) => {
   const { query } = props;
