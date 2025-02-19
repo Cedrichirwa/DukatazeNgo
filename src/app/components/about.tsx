@@ -19,11 +19,11 @@ const About: React.FC = () => {
             if (experienceRef.current)
                 new CountUp(experienceRef.current, new Date().getFullYear() - 2017, options).start();
             if (projectsRef.current)
-                new CountUp(projectsRef.current, 8, options).start();
+                new CountUp(projectsRef.current, 10, options).start();
             if (beneficiariesRef.current)
-                new CountUp(beneficiariesRef.current, 7100, options).start();
+                new CountUp(beneficiariesRef.current, 10000, options).start();
             if (impactedRef.current)
-                new CountUp(impactedRef.current, 22000, options).start();
+                new CountUp(impactedRef.current, 35000, options).start();
         };
 
         const observer = new IntersectionObserver(entries => {
