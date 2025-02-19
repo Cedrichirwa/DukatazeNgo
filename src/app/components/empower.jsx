@@ -28,7 +28,7 @@ const Empower = () => {
                         Target Group
                     </h2>
                     <p className="text-center sm:text-left">
-                        We target distinct organizations that have adolescents who are
+                        We target distinct communities that have adolescents who are
                         between 13-21 years old. Both boys and girls are welcomed, and
                         the reason why we involve boys in our target group is to help
                         raise a generation of males who do not contribute to menstrual
